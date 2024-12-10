@@ -1,0 +1,13 @@
+server:
+  port: 8060
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:10000
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+logging:
+   level:
+     org.apache.kafka.clients.producer.KafkaProducer: WARN
+     org.apache.kafka.clients.consumer.KafkaConsumer: ERROR
+  
