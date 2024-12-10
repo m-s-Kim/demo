@@ -25,7 +25,6 @@ services:
       - ./nifi/data:/opt/nifi/nifi-current/data
       - ./nifi/conf:/opt/nifi/nifi-current/conf
     restart: unless-stopped
-
 volumes:
   db_data:
   es-data:
